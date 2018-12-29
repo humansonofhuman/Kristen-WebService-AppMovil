@@ -1,6 +1,6 @@
 {
   "db": {
-    "host": "den1.mysql6.gear.host",
+    "host": "127.0.0.1",
     "port": 3306,
     "url": "",
     "database": "kristensie",
