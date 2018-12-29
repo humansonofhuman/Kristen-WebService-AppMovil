@@ -1,5 +1,5 @@
 {
-  "restApiRoot": "/kristensie",
+  "restApiRoot": "/",
   "host": "0.0.0.0",
   "port": 3002,
   "remoting": {
