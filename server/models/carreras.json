@@ -1,0 +1,23 @@
+{
+  "name": "carreras",
+  "plural": "Carreras",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "idCarreras": {
+      "type": "number",
+      "id": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

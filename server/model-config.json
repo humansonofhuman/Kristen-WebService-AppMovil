@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models",
+      "./models/parametros"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "alumnos": {
+    "dataSource": "db",
+    "public": true
+  },
+  "calificaciones": {
+    "dataSource": "db",
+    "public": true
+  },
+  "carreras": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Config": {
+    "dataSource": null,
+    "public": false
+  },
+  "CredencialesAlumno": {
+    "dataSource": null,
+    "public": true
+  },
+  "horario": {
+    "dataSource": "db",
+    "public": true
+  },
+  "kardexes": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MateriaHorario": {
+    "dataSource": null,
+    "public": true
+  },
+  "SalidaAlumnos": {
+    "dataSource": null,
+    "public": false
+  },
+  "SalidaHorario": {
+    "dataSource": null,
+    "public": true
+  }
+}

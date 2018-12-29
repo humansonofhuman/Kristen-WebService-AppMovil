@@ -1,0 +1,87 @@
+{
+  "name": "alumnos",
+  "plural": "Alumnos",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "matricula": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "contrasena": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "carrera": {
+      "type": "string"
+    },
+    "creditos": {
+      "type": "string"
+    },
+    "situacion": {
+      "type": "string"
+    },
+    "pdo_cve": {
+      "type": "string"
+    },
+    "pdo_ini": {
+      "type": "string"
+    },
+    "pdo_ter": {
+      "type": "string"
+    },
+    "curp": {
+      "type": "string"
+    },
+    "nacimiento": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "tel_domicilio": {
+      "type": "string"
+    },
+    "tel_movil": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "login": {
+      "accepts": [
+        {
+          "arg": "",
+          "type": "CredencialesAlumno",
+          "required": true,
+          "root": true,
+          "description": "Credenciales de acceso del alumno",
+          "http": {
+            "source": "body"
+          }
+        }
+      ],
+      "returns": {
+        "args": "alumno",
+        "type": "SalidaAlumnos",
+        "root": true
+      },
+      "description": "Valida credenciales del alumno para conceder acceso",
+      "http": {
+        "path": "/Login",
+        "verb": "post"
+      }
+    }
+  }
+}

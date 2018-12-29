@@ -1,0 +1,79 @@
+{
+  "name": "calificaciones",
+  "plural": "Calificaciones",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "matricula": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "nombre_mat": {
+      "type": "string",
+      "required": true
+    },
+    "grupo": {
+      "type": "string",
+      "required": true
+    },
+    "calificacion": {
+      "type": "string",
+      "required": true
+    },
+    "parcial_1": {
+      "type": "string",
+      "required": true
+    },
+    "parcial_2": {
+      "type": "string",
+      "required": true
+    },
+    "parcial_3": {
+      "type": "string",
+      "required": true
+    },
+    "parcial_4": {
+      "type": "string",
+      "required": true
+    },
+    "parcial_5": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "calificaciones": {
+      "accepts": [
+        {
+          "arg": "alumnoMatricula",
+          "type": "String",
+          "required": true,
+          "root": true,
+          "description": "Matricula del alumno",
+          "http": {
+            "source": "path"
+          }
+        }
+      ],
+      "returns": {
+        "args": "calificaciones",
+        "type": [
+          "calificaciones"
+        ],
+        "root": true
+      },
+      "description": "Devuelve las calificaciones actuales del alumno",
+      "http": {
+        "path": "/:alumnoMatricula",
+        "verb": "get"
+      }
+    }
+  }
+}

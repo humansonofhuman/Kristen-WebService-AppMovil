@@ -1,0 +1,45 @@
+{
+  "name": "SalidaHorario",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "excludeBaseProperties": ["id"],
+  "properties": {
+    "Lunes": {
+      "type": ["MateriaHorario"],
+      "required": true,
+      "description": ["Arreglo con las materias correspontiendes al dia Lunes\n",
+        "La cantidad de materias varía (puede ser cero)"]
+    },
+    "Martes": {
+      "type": ["MateriaHorario"],
+      "required": true,
+      "description": ["Arreglo con las materias correspontiendes al dia Martes\n",
+        "La cantidad de materias varía (puede ser cero)"]
+    },
+    "Miercoles": {
+      "type": ["MateriaHorario"],
+      "required": true,
+      "description": ["Arreglo con las materias correspontiendes al dia Miercoles\n",
+        "La cantidad de materias varía (puede ser cero)"]
+    },
+    "Jueves": {
+      "type": ["MateriaHorario"],
+      "required": true,
+      "description": ["Arreglo con las materias correspontiendes al dia Jueves\n",
+        "La cantidad de materias varía (puede ser cero)"]
+    },
+    "Viernes": {
+      "type": ["MateriaHorario"],
+      "required": true,
+      "description": ["Arreglo con las materias correspontiendes al dia Viernes\n",
+        "La cantidad de materias varía (puede ser cero)"]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,16 @@
+{
+  "loopback-component-explorer": {
+    "mountPath": "/explorer",
+    "basePath": "",
+    "apiInfo": {
+      "title": "Web Service Kristensie",
+      "description": [
+        "API que alimenta la App movil para Android \"Kristen\" de la Universidad Politécnica de Quintana Roo.\n",
+        "Web Service programado por los alumnos:\n",
+        "Mateo Morales García, Federico López Pellicer, José Manuel Gutiérrez Pech, Erick Alexis Hernández\n",
+        "Para más informacion sobre el uso de los flitros: https://loopback.io/doc/en/lb3/Querying-data.html\n"
+      ],
+      "contact": "soporte@upqroo.edu.mx"
+    }
+  }
+}

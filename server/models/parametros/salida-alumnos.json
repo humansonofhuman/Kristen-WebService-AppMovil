@@ -1,0 +1,83 @@
+{
+  "name": "SalidaAlumnos",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "matricula": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "contrasena": {
+      "type": "string",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "carrera": {
+      "type": "string",
+      "required": true
+    },
+    "nombre_carrera": {
+      "type": "string",
+      "required": true
+    },
+    "creditos": {
+      "type": "string",
+      "required": true
+    },
+    "situacion": {
+      "type": "string",
+      "required": true
+    },
+    "pdo_cve": {
+      "type": "string",
+      "required": true
+    },
+    "pdo_ini": {
+      "type": "string",
+      "required": true
+    },
+    "pdo_ter": {
+      "type": "string",
+      "required": true
+    },
+    "curp": {
+      "type": "string",
+      "required": true
+    },
+    "nacimiento": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "string",
+      "required": true
+    },
+    "tel_domicilio": {
+      "type": "string",
+      "required": true
+    },
+    "tel_movil": {
+      "type": "string",
+      "required": true
+    },
+    "correo": {
+      "type": "string",
+      "required": true
+    },
+    "config": {
+      "type": "Config",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

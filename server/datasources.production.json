@@ -1,0 +1,13 @@
+{
+  "db": {
+    "host": "den1.mysql6.gear.host",
+    "port": 3306,
+    "url": "",
+    "database": "kristensie",
+    "password": "<escribir-contraseña>",
+    "name": "db",
+    "user": "<escribir-usuario>",
+    "connector": "mysql",
+    "socketPath": "/var/lib/mysql/mysql.sock"
+  }
+}

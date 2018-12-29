@@ -1,0 +1,13 @@
+{
+  "extends": "loopback",
+  "rules": {
+    "space-before-function-paren": ["error", {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
+    "comma-dangle": ["error", "never"],
+    "camelcase": ["off"],
+    "max-len": ["warn", { "ignoreStrings": true }]
+  }
+}

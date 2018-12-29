@@ -1,0 +1,37 @@
+{
+  "name": "MateriaHorario",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "excludeBaseProperties": ["id"],
+  "properties": {
+    "acronimo": {
+      "type": "string",
+      "required": true,
+      "description": "Clave/acronimo del la materia"
+    },
+    "nombre": {
+      "type": "string",
+      "required": true,
+      "description": "Nombre del la materia"
+    },
+    "profesor": {
+      "type": "string",
+      "required": true,
+      "description": "Nombre del profesor que imparte la materia"
+    },
+    "hora": {
+      "type": "string",
+      "required": true,
+      "description": [
+        "Hora de inicio y de finalizacion de la materia\n",
+        "en el siguiente formato hh:mm-hh:mm"]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

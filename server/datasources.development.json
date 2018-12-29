@@ -1,0 +1,12 @@
+{
+  "db": {
+    "host": "den1.mysql6.gear.host",
+    "port": 3306,
+    "url": "",
+    "database": "kristensie",
+    "password": "Ef6jTY_7_00w",
+    "name": "db",
+    "user": "kristensie",
+    "connector": "mysql"
+  }
+}

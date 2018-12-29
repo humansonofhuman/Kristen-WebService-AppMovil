@@ -1,0 +1,27 @@
+{
+  "name": "CredencialesAlumno",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "matricula": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "description": "Matricula del alumno",
+      "default": ""
+    },
+    "contrasena": {
+      "type": "string",
+      "required": true,
+      "description": "Constraseña del alumno (misma que la del sie)",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,69 @@
+{
+  "name": "horario",
+  "plural": "Horario",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "matricula": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "clave_mat": {
+      "type": "string"
+    },
+    "nombre_mat": {
+      "type": "string"
+    },
+    "profesor": {
+      "type": "string"
+    },
+    "lunes": {
+      "type": "string"
+    },
+    "martes": {
+      "type": "string"
+    },
+    "miercoles": {
+      "type": "string"
+    },
+    "jueves": {
+      "type": "string"
+    },
+    "viernes": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {
+    "horario": {
+      "accepts": [
+        {
+          "arg": "matricula",
+          "type": "string",
+          "required": true,
+          "root": true,
+          "description": "Matricula para horario",
+          "http": {
+            "source": "path"
+          }
+        }
+      ],
+      "returns": {
+        "args": "horario",
+        "type": "SalidaHorario",
+        "root": true
+      },
+      "description": "Devuelve el horario actual correspondiente a una matricula",
+      "http": {
+        "path": "/:matricula",
+        "verb": "get"
+      }
+    }
+  }
+}

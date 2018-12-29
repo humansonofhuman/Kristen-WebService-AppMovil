@@ -1,0 +1,37 @@
+{
+  "name": "Config",
+  "base": "Model",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "excludeBaseProperties": ["id"],
+  "properties": {
+    "url_api": {
+      "type": "string",
+      "description": "Url base del api de la página web",
+      "required": true
+    },
+    "url_base": {
+      "type": "string",
+      "description": "Url base de la página web",
+      "required": true
+    },
+    "topic_general": {
+      "type": "string",
+      "description": "Topic para recibir avisos de noticias generales",
+      "required": true
+    },
+    "topic": {
+      "type": "string",
+      "description": [
+        "Topic para recibir avisos de publicaciones \n",
+        "especificas de la carrera a la que pertenece el alumno"],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
