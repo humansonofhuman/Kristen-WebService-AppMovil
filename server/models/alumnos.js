@@ -45,6 +45,7 @@ module.exports = function (Alumnos) {
         var config = {
           'url_api': URL_API,
           'url_base': URL_BASE,
+          'token': server.TOKEN,
           'topic_general': TOPIC_GENERAL,
           'topic': formatoGrupoObjetivo(nombre)
         };
@@ -87,17 +88,4 @@ module.exports = function (Alumnos) {
       case '5': return 'Egresado';
     }
   };
-  // INCIA - REMOTE HOOKS
-  Alumnos.beforeRemote('*', function logQuery(ctx, modelInstance, next) {
-    // console.log('Token:', ctx.req.query.access_token);
-    // Si el Token es invalido no realiza el proceso y rechaza la petición
-    if (typeof ctx.req.query.access_token === 'undefined' ||
-    ctx.req.query.access_token !== server.TOKEN) {
-      console.log('Token de acceso inválido %s', ctx.req.query.access_token);
-      ctx.res.sendStatus(403);
-    } else {
-      next();
-    }
-  });
-  // TERMINA - REMOTE HOOKS
 };

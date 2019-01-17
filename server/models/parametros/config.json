@@ -17,6 +17,11 @@
       "description": "Url base de la página web",
       "required": true
     },
+    "token": {
+      "type": "string",
+      "description": "Token con el cual el usuario puede tener acceso a su información",
+      "required": true
+    },
     "topic_general": {
       "type": "string",
       "description": "Topic para recibir avisos de noticias generales",
