@@ -7,11 +7,6 @@
   },
   "excludeBaseProperties": ["id"],
   "properties": {
-    "url_api": {
-      "type": "string",
-      "description": "Url base del api de la página web",
-      "required": true
-    },
     "url_base": {
       "type": "string",
       "description": "Url base de la página web",

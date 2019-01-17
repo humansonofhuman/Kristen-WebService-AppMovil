@@ -3,7 +3,6 @@
 module.exports = function (Alumnos) {
   const TOPIC_GENERAL = 'GENERAL';
   const URL_BASE = 'new.upqroo.edu.mx/'; // Debe llevar la / al final
-  const URL_API = 'kristen-mongodb.glitch.me/';
   var server = require('../../server/server');
 
   Alumnos.login = function (credenciales, cb) {
@@ -43,7 +42,6 @@ module.exports = function (Alumnos) {
         // El topic es para la suscripcion a las notificaciones en firebase
         alumno[0].situacion = nombreEstadoVigencia(alumno[0].situacion);
         var config = {
-          'url_api': URL_API,
           'url_base': URL_BASE,
           'token': server.TOKEN,
           'topic_general': TOPIC_GENERAL,
