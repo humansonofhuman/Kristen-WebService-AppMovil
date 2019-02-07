@@ -66,7 +66,8 @@ Puedes cambiar la base de datos a la que se conecta la aplicacion desde el datas
             "name": "db",
             "user": "<escribir-usuario>",
             "connector": "mysql",
-            "socketPath": "<escribir/path/al/mysql/mysql.sock>"
+            "socketPath": "<escribir/path/al/mysql/mysql.sock>",
+            "lazyConnect": true
         }
     }
     ```
