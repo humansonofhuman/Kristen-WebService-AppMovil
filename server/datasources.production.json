@@ -8,6 +8,7 @@
     "name": "db",
     "user": "<escribir-usuario>",
     "connector": "mysql",
-    "socketPath": "/var/lib/mysql/mysql.sock"
+    "socketPath": "/var/lib/mysql/mysql.sock",
+    "lazyConnect": true
   }
 }
