@@ -3,7 +3,6 @@
 module.exports = function (Alumnos) {
   const TOPIC_GENERAL = 'GENERAL';
   const URL_BASE = 'new.upqroo.edu.mx/'; // Debe llevar la / al final
-  const URL_API = 'kristen-mongodb.glitch.me/';
   var server = require('../../server/server');
 
   Alumnos.login = function (credenciales, cb) {
@@ -43,8 +42,8 @@ module.exports = function (Alumnos) {
         // El topic es para la suscripcion a las notificaciones en firebase
         alumno[0].situacion = nombreEstadoVigencia(alumno[0].situacion);
         var config = {
-          'url_api': URL_API,
           'url_base': URL_BASE,
+          'token': server.TOKEN,
           'topic_general': TOPIC_GENERAL,
           'topic': formatoGrupoObjetivo(nombre)
         };
@@ -87,17 +86,4 @@ module.exports = function (Alumnos) {
       case '5': return 'Egresado';
     }
   };
-  // INCIA - REMOTE HOOKS
-  Alumnos.beforeRemote('*', function logQuery(ctx, modelInstance, next) {
-    // console.log('Token:', ctx.req.query.access_token);
-    // Si el Token es invalido no realiza el proceso y rechaza la petición
-    if (typeof ctx.req.query.access_token === 'undefined' ||
-    ctx.req.query.access_token !== server.TOKEN) {
-      console.log('Token de acceso inválido %s', ctx.req.query.access_token);
-      ctx.res.sendStatus(403);
-    } else {
-      next();
-    }
-  });
-  // TERMINA - REMOTE HOOKS
 };

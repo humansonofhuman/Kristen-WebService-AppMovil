@@ -57,17 +57,17 @@ Puedes cambiar la base de datos a la que se conecta la aplicacion desde el datas
 4. Configurar usuario y contraseña en [datasource.production.json](server/datasources.production.json)
     ```json
     {
-      "db": {
-        "host": "127.0.0.1",
-        "port": 3306,
-        "url": "",
-        "database": "kristensie",
-        "password": "<escribir-contraseña>",
-        "name": "db",
-        "user": "<escribir-usuario>",
-        "connector": "mysql",
-        "socketPath": "<escribir/path/al/mysql/mysql.sock>"
-      }
+        "db": {
+            "host": "127.0.0.1",
+            "port": 3306,
+            "url": "",
+            "database": "kristensie",
+            "password": "<escribir-contraseña>",
+            "name": "db",
+            "user": "<escribir-usuario>",
+            "connector": "mysql",
+            "socketPath": "<escribir/path/al/mysql/mysql.sock>"
+        }
     }
     ```
     ###### Nota: el atributo socketPath puede que no sea necesario, dependiendo de la configuracion y el sistema operativo
